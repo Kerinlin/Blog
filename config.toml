@@ -2,14 +2,10 @@ baseURL = "https://blog.joway.io/"
 languageCode = "en-us"
 title = "Kerin's Blog"
 theme = "blackMode"
-toc = "ture"
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-  [markup.tableOfContents]
-    endLevel = 3
-    startLevel = 2
 
 [author]
   name = "KerinLin"
