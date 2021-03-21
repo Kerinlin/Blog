@@ -1,7 +1,7 @@
 ---
 title: "Electron+vue从零开始打造一个本地播放器"
 date: 2021-03-21T22:38:07+08:00
-draft: true
+draft: false
 ---
 
 ![BCM9HI.png](https://s1.ax1x.com/2020/10/21/BCM9HI.png)
