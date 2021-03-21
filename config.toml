@@ -1,0 +1,29 @@
+baseURL = "https://blog.joway.io/"
+languageCode = "en-us"
+title = "Kerin's Blog"
+theme = "blackMode"
+toc = "ture"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    endLevel = 3
+    startLevel = 2
+
+[author]
+  name = "KerinLin"
+  homepage = "https://github.com/Kerinlin/"
+
+[params]
+mainSections = ["posts"]
+headTitle = "Kerin's Orange"
+disqus = "Orange" # disqus account name
+extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-xxx"></script>'
+
+[[params.socials]]
+name = "Github"
+link = "https://github.com/Kerinlin"
+
+# extraCSSFiles = ["css/foo.css", "css/bar.css"]
+extraCSSFiles = []
