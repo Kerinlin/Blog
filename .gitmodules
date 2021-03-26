@@ -1,0 +1,3 @@
+[submodule "themes/blackMode"]
+	path = themes/blackMode
+	url = https://github.com/Kerinlin/blackMode.git
