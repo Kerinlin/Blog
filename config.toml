@@ -13,7 +13,7 @@ theme = "blackMode"
 
 [params]
 mainSections = ["posts"]
-headTitle = "Kerin's Orange"
+headTitle = "Kerin"
 disqus = "Orange" # disqus account name
 extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-xxx"></script>'
 
