@@ -50,7 +50,8 @@ draft: false
 
 父组件通过props向子组件传递数据，子组件通过$emit与父组件通信。
 
-```vue
+```javascript
+
 //子组件
 <template>
   <div>
@@ -112,7 +113,8 @@ export default {
 
 父组件通过$children访问子组件实例,返回的是一个数组，因为可能有多个子实例，子组件通过$parent访问父组件实例,返回的是一个对象。另外需要注意的是**Vue3已经移除了$children**。$children与$parent设计的主要目的是作为访问组件的应急办法。
 
-```vue
+```javascript
+
 //子组件
 <template>
   <div>
@@ -176,7 +178,8 @@ export default {
 
 在普通DOM元素上使用，引用指向DOM元素，如果在组件上，引用指向组件实例
 
-```vue
+```javascript
+
 //子组件
 <template>
   <div>
@@ -248,6 +251,7 @@ export default {
   },
 };
 </script>
+
 ```
 
 以上三种是常用的父子组件通信方案
@@ -339,7 +343,8 @@ export default {
 
 provide/inject 用于处理**隔代组件**之间的通信，适合处理这种嵌套的组件关系。provide翻译就是提供，父组件provide变量，子组件或者子组件下的子组件...通过inject注入变量达到通信的效果，有一点需要注意的是，**provide绑定并不是响应式的，但是如果提供的是一个可监听的响应式对象，那么这个对象的属性依然是可监听的**，下面的例子详细的证明这点
 
-```vue
+```javascript
+
 //父组件
 <template>
   <div>
@@ -417,6 +422,7 @@ export default {
   },
 };
 </script>
+
 ```
 
 #### $attrs / $listeners
@@ -429,7 +435,8 @@ $attrs / $listeners也是用来处理隔代组件还有嵌套组件的问题。
 
 需要注意的是,vue3已经移除了$listeners。
 
-```vue
+```javascript
+
 //父组件
 <template>
   <!-- name 和 age 作为props 不会传入过去，这里会传入data,还有监听器updateInfo -->
@@ -500,6 +507,7 @@ export default {
   },
 };
 </script>
+
 ```
 
 #### Vuex
